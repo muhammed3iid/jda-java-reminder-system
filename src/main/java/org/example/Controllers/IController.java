@@ -1,5 +1,5 @@
 package org.example.Controllers;
 
 public interface IController {
-    void generate();
+    void generate() throws InterruptedException;
 }

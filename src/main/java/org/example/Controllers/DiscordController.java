@@ -7,6 +7,7 @@ import org.example.Model;
 
 import javax.security.auth.login.LoginException;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 public class DiscordController implements IController{
 
@@ -17,6 +18,7 @@ public class DiscordController implements IController{
     Model model;
     Random random;
     String msg;
+    int delayTime;
 
     public DiscordController() throws LoginException, InterruptedException {
         botToken = "MTEwMjQwMjE2MjE3MDAwMzQ3Nw.G6IHdb.ykYRLN7nQd-gfQxsZJX0zqh4T7mWNJRFXOLsWU";
@@ -26,11 +28,15 @@ public class DiscordController implements IController{
         channel = discordBot.getTextChannelById(channelID);
         model = new Model();
         random = new Random();
+        delayTime = 10;
     }
 
-    public void generate(){
-        msg  = getRandomElementFromList();
-        sendMsg(msg);
+    public void generate() throws InterruptedException {
+        while (true){
+            msg  = getRandomElementFromList();
+            sendMsg(msg);
+            startDelay(delayTime);
+        }
     }
 
     public void sendMsg(String msg){
@@ -38,7 +44,11 @@ public class DiscordController implements IController{
     }
 
     public String getRandomElementFromList(){
-        return model.getList().get(random.nextInt(model.getList().size()-1));
+        return model.getList().get(random.nextInt(model.getList().size()));
+    }
+
+    public void startDelay(int delayTime) throws InterruptedException {
+        TimeUnit.SECONDS.sleep(delayTime);
     }
 
 }
