@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.Controllers.DiscordController;
+import org.example.Controllers.Discord.DiscordController;
 import org.example.Controllers.IController;
 
 import javax.security.auth.login.LoginException;
