@@ -18,8 +18,8 @@ public class DiscordController implements IController {
     SingletonModel modelInstance;
     Random random;
 
-    static final String botToken = "MTEwMjQwMjE2MjE3MDAwMzQ3Nw.G6IHdb.ykYRLN7nQd-gfQxsZJX0zqh4T7mWNJRFXOLsWU";
-    static final String outputChannelID = "1103055666211471392";
+    static final String botToken = "" ;                 // Enter your bot token
+    static final String outputChannelID = "" ;          // Enter your channel id
     static final int delayTime = 60;
 
     public DiscordController() throws LoginException, InterruptedException {

@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class EventListener extends ListenerAdapter {
 
-    static final String inputChannelID = "1103055766803464334";
+    static final String inputChannelID = "";            // Enter your channel id
 
     @Override
     public void onMessageReceived(@NotNull MessageReceivedEvent event){
