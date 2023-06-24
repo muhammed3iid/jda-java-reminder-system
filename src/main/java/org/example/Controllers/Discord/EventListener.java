@@ -1,5 +1,6 @@
 package org.example.Controllers.Discord;
 
+import io.github.cdimascio.dotenv.Dotenv;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
@@ -8,7 +9,8 @@ import org.jetbrains.annotations.NotNull;
 
 public class EventListener extends ListenerAdapter {
 
-    static final String inputChannelID = "";            // Enter your channel id
+    static final Dotenv dotenv = Dotenv.load();
+    static final String inputChannelID = dotenv.get("INPUT_CHANNEL_ID");
 
     @Override
     public void onMessageReceived(@NotNull MessageReceivedEvent event){

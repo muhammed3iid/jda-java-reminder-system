@@ -10,6 +10,7 @@ import org.example.Models.SingletonModel;
 import javax.security.auth.login.LoginException;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+import io.github.cdimascio.dotenv.Dotenv;
 
 public class DiscordController implements IController {
 
@@ -17,10 +18,10 @@ public class DiscordController implements IController {
     MessageChannel outputChannel;
     SingletonModel modelInstance;
     Random random;
-
-    static final String botToken = "" ;                 // Enter your bot token
-    static final String outputChannelID = "" ;          // Enter your channel id
-    static final int delayTime = 60;
+    static final Dotenv dotenv = Dotenv.load();
+    static final String botToken = dotenv.get("BOT_TOKEN");
+    static final String outputChannelID = dotenv.get("OUTPUT_CHANNEL_ID");
+    static final int delayTime = Integer.parseInt(dotenv.get("DELAY_TIME"));
 
     public DiscordController() throws LoginException, InterruptedException {
         discordBot = JDABuilder.createDefault(botToken).enableIntents(GatewayIntent.GUILD_MESSAGES).build();
