@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86a1b370-f7b5-48b6-adaa-992d634a3f5b" name="Changes" comment="created EventListener class for input&#10;used singleton pattern in model class">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env_example" afterDir="false" />
+    <list default="true" id="86a1b370-f7b5-48b6-adaa-992d634a3f5b" name="Changes" comment="added env variables">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Controllers/Discord/DiscordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Controllers/Discord/DiscordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Controllers/Discord/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Controllers/Discord/EventListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683072925250</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added env variables">
+      <created>1687570913048</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687570913048</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,7 +118,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="delay time in generate added" />
     <MESSAGE value="created EventListener class for input&#10;used singleton pattern in model class" />
-    <option name="LAST_COMMIT_MESSAGE" value="created EventListener class for input&#10;used singleton pattern in model class" />
+    <MESSAGE value="added env variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="added env variables" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
